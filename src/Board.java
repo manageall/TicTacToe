@@ -123,10 +123,7 @@ public class Board {
 	}
 	
 	public boolean boxIsFree(int moveX, int moveY){
-		if(grid[moveY][moveX] == 'O' || grid[moveY][moveX] == 'X'){
-			return false;
-		} else {
-			return true;
-		}
+		boolean foo = (grid[moveY][moveX] == 'O' || grid[moveY][moveX] == 'X') ? false : true;
+		return foo;
 	}
 }
